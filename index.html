@@ -33,9 +33,16 @@
             background-color: #F5F8FB;
         }
         .hero-bg {
-            background: linear-gradient(rgba(42, 111, 168, 0.05), rgba(42, 111, 168, 0.05)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000');
+            background: linear-gradient(rgba(42, 111, 168, 0.5), rgba(42, 111, 168, 0.5)), url('images/warehouse_outside.jpg');
             background-size: cover;
             background-position: center;
+        }
+        .world-map-bg {
+            background-image: url('images/blue_world_map.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.15;
         }
     </style>
 </head>
@@ -61,20 +68,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-bg py-20 md:py-32">
+    <section class="hero-bg py-8 md:py-16">
         <div class="container mx-auto px-6 text-center md:text-left">
             <div class="max-w-3xl">
-                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                     Global Supply & Procurement Solutions
                 </h1>
-                <p class="text-xl md:text-2xl text-slate-600 mb-10 leading-relaxed">
+                <p class="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed">
                     Reliable sourcing and supply services for public tenders, institutions, and organizations worldwide.
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-                    <a href="#contact" class="bg-primary hover:bg-accent text-white px-8 py-4 rounded font-semibold text-lg transition shadow-lg text-center">
+                    <a href="#contact" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded font-semibold text-lg transition shadow-lg text-center">
                         Contact Us
                     </a>
-                    <a href="#suppliers" class="bg-white hover:bg-gray-50 text-primary border-2 border-primary px-8 py-4 rounded font-semibold text-lg transition text-center">
+                    <a href="#suppliers" class="bg-transparent hover:bg-white/10 text-white border-2 border-white px-8 py-4 rounded font-semibold text-lg transition text-center">
                         Become a Supplier
                     </a>
                 </div>
@@ -90,25 +97,21 @@
                 <div class="w-20 h-1.5 bg-secondary mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Card 1 -->
                 <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
                     <i data-lucide="search" class="text-primary w-10 h-10 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">Global Product Sourcing</h3>
                     <p class="text-slate-600">We source products from trusted manufacturers worldwide, ensuring quality and reliability.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
                     <i data-lucide="file-text" class="text-primary w-10 h-10 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">Public Procurement Supply</h3>
                     <p class="text-slate-600">Supporting government and institutional tenders with professional procurement expertise.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
                     <i data-lucide="truck" class="text-primary w-10 h-10 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">Distribution & Logistics</h3>
                     <p class="text-slate-600">Reliable delivery through our global supplier network and logistics management.</p>
                 </div>
-                <!-- Card 4 -->
                 <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
                     <i data-lucide="users" class="text-primary w-10 h-10 mb-6"></i>
                     <h3 class="text-xl font-bold mb-3">Supplier Partnerships</h3>
@@ -119,34 +122,35 @@
     </section>
 
     <!-- Industries Section -->
-    <section id="industries" class="py-20 bg-lightBg">
-        <div class="container mx-auto px-6">
+    <section id="industries" class="py-20 bg-white relative">
+        <div class="absolute inset-0 world-map-bg"></div>
+        <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Industries We Supply</h2>
                 <div class="w-20 h-1.5 bg-secondary mx-auto"></div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                <div class="flex flex-col items-center text-center p-6 bg-lightBg/80 backdrop-blur-sm rounded-lg shadow-sm">
                     <i data-lucide="armchair" class="text-primary w-12 h-12 mb-4"></i>
                     <span class="font-semibold">Office & Institutional Furniture</span>
                 </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                <div class="flex flex-col items-center text-center p-6 bg-lightBg/80 backdrop-blur-sm rounded-lg shadow-sm">
                     <i data-lucide="clipboard-check" class="text-primary w-12 h-12 mb-4"></i>
                     <span class="font-semibold">Public Sector Procurement</span>
                 </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                <div class="flex flex-col items-center text-center p-6 bg-lightBg/80 backdrop-blur-sm rounded-lg shadow-sm">
                     <i data-lucide="graduation-cap" class="text-primary w-12 h-12 mb-4"></i>
                     <span class="font-semibold">Educational Equipment</span>
                 </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                <div class="flex flex-col items-center text-center p-6 bg-lightBg/80 backdrop-blur-sm rounded-lg shadow-sm">
                     <i data-lucide="shield-check" class="text-primary w-12 h-12 mb-4"></i>
                     <span class="font-semibold">Safety & Industrial Supplies</span>
                 </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                <div class="flex flex-col items-center text-center p-6 bg-lightBg/80 backdrop-blur-sm rounded-lg shadow-sm">
                     <i data-lucide="building-2" class="text-primary w-12 h-12 mb-4"></i>
                     <span class="font-semibold">Municipal Infrastructure</span>
                 </div>
-                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                <div class="flex flex-col items-center text-center p-6 bg-lightBg/80 backdrop-blur-sm rounded-lg shadow-sm">
                     <i data-lucide="package" class="text-primary w-12 h-12 mb-4"></i>
                     <span class="font-semibold">Facility Supplies</span>
                 </div>
@@ -171,30 +175,30 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1454165833767-027eeef1551b?auto=format&fit=crop&q=80&w=1000" alt="Professional Business meeting" class="rounded-lg shadow-xl">
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="images/warehouse_inside_boxs.jpg" alt="Warehouse inventory and boxes" class="rounded-lg shadow-xl w-full max-w-md h-auto object-cover bg-gray-100">
                 </div>
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Why Choose DSH Supply</h2>
                     <ul class="space-y-4">
                         <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <i data-lucide="check-circle" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
                             <span class="text-lg">Global supplier network</span>
                         </li>
                         <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <i data-lucide="check-circle" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
                             <span class="text-lg">Reliable sourcing</span>
                         </li>
                         <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <i data-lucide="check-circle" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
                             <span class="text-lg">Competitive pricing</span>
                         </li>
                         <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <i data-lucide="check-circle" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
                             <span class="text-lg">Institutional procurement expertise</span>
                         </li>
                         <li class="flex items-start">
-                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <i data-lucide="check-circle" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
                             <span class="text-lg">Flexible supply solutions</span>
                         </li>
                     </ul>
