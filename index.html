@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSH Supply | Global Sourcing & Procurement Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2A6FA8',
+                        secondary: '#4FA3D9',
+                        lightBg: '#F5F8FB',
+                        accent: '#1F6FB2',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F8FB;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(42, 111, 168, 0.05), rgba(42, 111, 168, 0.05)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header / Nav -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="globe" class="text-primary w-8 h-8"></i>
+                <span class="text-2xl font-bold tracking-tight text-primary">DSH SUPPLY</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#industries" class="hover:text-primary transition">Industries</a>
+                <a href="#suppliers" class="hover:text-primary transition">Suppliers</a>
+                <a href="#contact" class="hover:text-primary transition text-primary border-b-2 border-primary">Contact</a>
+            </nav>
+            <button class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                    Global Supply & Procurement Solutions
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-600 mb-10 leading-relaxed">
+                    Reliable sourcing and supply services for public tenders, institutions, and organizations worldwide.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-primary hover:bg-accent text-white px-8 py-4 rounded font-semibold text-lg transition shadow-lg text-center">
+                        Contact Us
+                    </a>
+                    <a href="#suppliers" class="bg-white hover:bg-gray-50 text-primary border-2 border-primary px-8 py-4 rounded font-semibold text-lg transition text-center">
+                        Become a Supplier
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">What We Do</h2>
+                <div class="w-20 h-1.5 bg-secondary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
+                    <i data-lucide="search" class="text-primary w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Global Product Sourcing</h3>
+                    <p class="text-slate-600">We source products from trusted manufacturers worldwide, ensuring quality and reliability.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
+                    <i data-lucide="file-text" class="text-primary w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Public Procurement Supply</h3>
+                    <p class="text-slate-600">Supporting government and institutional tenders with professional procurement expertise.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
+                    <i data-lucide="truck" class="text-primary w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Distribution & Logistics</h3>
+                    <p class="text-slate-600">Reliable delivery through our global supplier network and logistics management.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-8 bg-lightBg rounded-lg border border-gray-100 hover:shadow-md transition">
+                    <i data-lucide="users" class="text-primary w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Supplier Partnerships</h3>
+                    <p class="text-slate-600">Working with manufacturers to reach new markets and fulfill institutional requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="py-20 bg-lightBg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Industries We Supply</h2>
+                <div class="w-20 h-1.5 bg-secondary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                    <i data-lucide="armchair" class="text-primary w-12 h-12 mb-4"></i>
+                    <span class="font-semibold">Office & Institutional Furniture</span>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                    <i data-lucide="clipboard-check" class="text-primary w-12 h-12 mb-4"></i>
+                    <span class="font-semibold">Public Sector Procurement</span>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                    <i data-lucide="graduation-cap" class="text-primary w-12 h-12 mb-4"></i>
+                    <span class="font-semibold">Educational Equipment</span>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                    <i data-lucide="shield-check" class="text-primary w-12 h-12 mb-4"></i>
+                    <span class="font-semibold">Safety & Industrial Supplies</span>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                    <i data-lucide="building-2" class="text-primary w-12 h-12 mb-4"></i>
+                    <span class="font-semibold">Municipal Infrastructure</span>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
+                    <i data-lucide="package" class="text-primary w-12 h-12 mb-4"></i>
+                    <span class="font-semibold">Facility Supplies</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supplier CTA Section -->
+    <section id="suppliers" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Are You a Manufacturer or Supplier?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">
+                We partner with manufacturers and distributors worldwide to supply institutional and public procurement projects.
+            </p>
+            <a href="#contact" class="bg-white text-primary hover:bg-gray-100 px-10 py-4 rounded font-bold text-lg transition inline-block">
+                Partner With Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1454165833767-027eeef1551b?auto=format&fit=crop&q=80&w=1000" alt="Professional Business meeting" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Why Choose DSH Supply</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <span class="text-lg">Global supplier network</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <span class="text-lg">Reliable sourcing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <span class="text-lg">Competitive pricing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <span class="text-lg">Institutional procurement expertise</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="check-circle-2" class="text-secondary w-6 h-6 mr-3 mt-1 shrink-0"></i>
+                            <span class="text-lg">Flexible supply solutions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-lightBg">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-10 bg-primary text-white">
+                    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+                    <p class="mb-8 opacity-90 text-lg">
+                        Reach out to discuss your procurement needs or to learn more about our supplier network.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i data-lucide="mail" class="w-6 h-6 mr-4"></i>
+                            <span class="text-lg">info@dshsupply.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-lucide="globe" class="w-6 h-6 mr-4"></i>
+                            <span class="text-lg">www.dshsupply.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 p-10">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Company</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="Company Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="email@company.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-accent text-white font-bold py-3 rounded-md transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="globe" class="text-secondary w-6 h-6"></i>
+                        <span class="text-xl font-bold tracking-tight">DSH SUPPLY</span>
+                    </div>
+                    <p class="text-slate-400 max-w-xs">
+                        Global sourcing and procurement solutions for institutions worldwide.
+                    </p>
+                </div>
+                <div class="grid grid-cols-3 gap-12">
+                    <div>
+                        <h4 class="font-bold mb-4 uppercase text-sm tracking-wider">Services</h4>
+                        <ul class="space-y-2 text-slate-400">
+                            <li><a href="#services" class="hover:text-white transition">Sourcing</a></li>
+                            <li><a href="#services" class="hover:text-white transition">Procurement</a></li>
+                            <li><a href="#services" class="hover:text-white transition">Logistics</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4 uppercase text-sm tracking-wider">Suppliers</h4>
+                        <ul class="space-y-2 text-slate-400">
+                            <li><a href="#suppliers" class="hover:text-white transition">Partner Us</a></li>
+                            <li><a href="#suppliers" class="hover:text-white transition">Network</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4 uppercase text-sm tracking-wider">Contact</h4>
+                        <ul class="space-y-2 text-slate-400">
+                            <li><a href="#contact" class="hover:text-white transition">Inquiry</a></li>
+                            <li><a href="#contact" class="hover:text-white transition">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500 text-sm">
+                &copy; 2026 DSH Supply. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

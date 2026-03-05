@@ -1,0 +1,42 @@
+/* Custom styles for DSH Supply */
+:root {
+    --primary: #2A6FA8;
+    --secondary: #4FA3D9;
+    --light-bg: #F5F8FB;
+    --accent: #1F6FB2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1a202c;
+}
+
+.hero-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle animation for the globe icon */
+.globe-icon {
+    transition: transform 0.3s ease;
+}
+
+.globe-icon:hover {
+    transform: rotate(15deg);
+}
+
+/* Form focus effects */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(42, 111, 168, 0.1);
+}
+
+/* Smooth transitions for links and buttons */
+a, button {
+    transition: all 0.2s ease-in-out;
+}
